@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Float Block Test</title>
+	<!-- 
+	    This is an example of an inline CSS block. It is created
+		using the style element. Your external (linked) CSS styles
+		are applied first. The styles here are applied *after* 
+		any external styles. 
+	-->
+	<style>
+		/* NOTE: CSS style comments in here. */
+		/* Define a block class. These divs  */
+		/* will be 100px x 100px blocks. */
+		.block 
+		{
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+		
+		/* You'll add more CSS code in here */
+		/* Define right block properties */
+		.rightblock
+		{
+			width: 200px;
+			height: 200px;
+			border: solid orange;
+			float: right;
+		}
+		
+		/* Define bottom block properties */
+		.bottomblock
+		{
+			height: 50px;
+			width: auto;
+			background-color: RGB(200, 200, 200);
+		}
+		
+		/* Define other blocks color */
+		.blue {background-color: blue; }
+		.green { background-color: green; }
+		.yellow{ background-color: yellow; }
+		.red{ background-color: red; }
+		
+		/* In order to have it stay in its own line, the <div> separation needs
+		to be preserved, thus, erased from this element. */
+		#bottom
+		{
+			clear: both;
+		 }
+	
+	</style>
+</head>
+<body>
+	<!--
+	 This is where we have defined all of our
+	 blocks (in the form of divs). Some of the
+	 classes being used already exist. You'll
+	 need to create the rest in the above
+	 style block. 
+	-->
+	
+	<!-- Heading -->
+	<h1> Float Block Test </h1>
+	
+	<!-- Large yellow block -->
+	<div class="rightblock yellow"></div>
+	
+	<!-- Set of red, green, and blue blocks -->
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	
+	<!-- This bottom block is kind of like
+	     a footer. -->
+	<div class="bottomblock" id="bottom"></div>
+</body>
+</html>
